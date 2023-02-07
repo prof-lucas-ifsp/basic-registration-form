@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=" stylesheet" href="./style.css">
+  <script src="register.js"></script>
+  <title>Cadastro</title>
+</head>
+
+<body>
+  <form name="register-form" onsubmit="return false;">
+    <div class="container">
+      <h1>Cadastrar</h1>
+      <p>Preencha as informações a seguir para se cadastrar.</p>
+      <hr>
+
+      <label for="name" id="lb-name"><b>Nome <span class='error' id="name-err"></span></b></label>
+      <input type="text" placeholder="Digite nome completo" name="name" id="name">
+
+      <label for="email"><b>E-mail <span class='error' id="email-err"></span></b></label>
+      <input type="text" placeholder="Digite seu e-mail" name="email" id="email">
+
+      <label for="psw"><b>Senha <span class='error' id="psw-err"></span></b></label>
+      <input type="password" placeholder="Digite uma senha" name="psw" id="psw">
+
+      <label for="psw-repeat"><b>Confirmação de Senha <span class='error' id="psw-repeat-err"></span></b></label>
+      <input type="password" placeholder="Digite a confirmação de sua senha" name="psw-repeat" id="psw-repeat">
+      <hr>
+
+      <button id="btn-submit" type="submit" class="registerbtn" onClick="submitform()">Cadastrar</button>
+    </div>
+    <div class="container signin">
+      <p>Já possui uma conta? <a href="authenticate.html">Fazer login</a>.</p>
+    </div>
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./style.css">
+  <script src="authenticate.js"></script>
+  <title>Login</title>
+</head>
+
+<body>
+  <form name="login-form" onsubmit="return false;">
+    <div class="container">
+      <h1>Login</h1>
+      <hr>
+
+      <label for="email"><b>E-mail<span class='error' id="email-err"></span></b></label>
+      <input type="text" placeholder="Entre seu e-mail" name="email" id="email">
+
+      <label for="psw"><b>Senha<span class='error' id="psw-err"></span></b></label>
+      <input type="password" placeholder="Entre sua senha" name="psw" id="psw">
+
+      <div class='error' id="msg-err"></div>
+      <hr>
+
+      <button type="submit" class="registerbtn" onClick="submitform()">Entrar</button>
+    </div>
+    <div class="container signin">
+      <p>Novo por aqui? <a href="register.html">Crie uma conta</a>.</p>
+    </div>
+  </form>
+
+</body>
+
+</html>
